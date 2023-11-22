@@ -30,9 +30,9 @@ def choose_random_word(termo_words):
             index = random.randrange(len(termo_words))
         except ValueError:
             input("Seu jogo está LIMITADO! Adicione palavras no aquivo 'words_termo.txt'")
-            #list_termo_words = open('words_termo.txt', 'w')
-            #list_word = ["CATAR\n","PODAR\n","PARAR\n","JOGAR\n","CATAR\n","PODAR\n","PARAR\n","JOGAR\n"]
-            #return "PODAR\n"
+            list_termo_words = open('words_termo.txt', 'w')
+            list_word = ["CATAR\n","PODAR\n","PARAR\n","JOGAR\n","CATAR\n","PODAR\n","PARAR\n","JOGAR\n"]
+            return "PODAR\n"
             
 
 
@@ -51,6 +51,7 @@ def append_word_to_file(word, file):
     words_used.write(word + "\n")
 
 def reset_game():
+    # Retorna as palavras usadas para as palavras do termo
     list_words = read_termo_words('words_termo.txt')
     list_useds = read_termo_words('words_used.txt')
     sum = list_words + list_useds
@@ -58,11 +59,13 @@ def reset_game():
     rewrite_termo_txt(sum)
 
 def start_game():
+    # Inicia o Jogo lendo o arquivo das palavras e escolhendo uma
     termo_words = read_termo_words('words_termo.txt')
     termo_word = choose_random_word(termo_words)
     return termo_word
 
 def win_game(termo_word):
+    # Passa as palavras descobertas para as palavras usadas
     if type(termo_word) == tuple:
         for word in termo_word:
             append_word_to_file(word, 'words_used.txt')
@@ -70,6 +73,7 @@ def win_game(termo_word):
         append_word_to_file(termo_word, 'words_used.txt')
 
 def lose_game(termo_word):
+    # Retoma as palavras usadas no jogo para o arquivo
     if type(termo_word) == tuple:
         for word in termo_word:
             append_word_to_file(word, 'words_termo.txt')
