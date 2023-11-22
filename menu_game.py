@@ -36,7 +36,6 @@ def main():
             termo_word_2 = start_game()
             clear_terminal()
             print("____DUETO____\n")
-            print(termo_word_1,termo_word_2)
             result = dueto_rules(termo_word_1,termo_word_2)
             if result == "PERDEU":
                 lose_game((termo_word_1,termo_word_2))
@@ -51,7 +50,6 @@ def main():
             termo_word_4 = start_game()
             clear_terminal()
             print("____QUARTETO____\n")
-            print(termo_word_1,termo_word_2,termo_word_3,termo_word_4)
             result = quarteto_rules(termo_word_1,termo_word_2,termo_word_3,termo_word_4)
             if result == "PERDEU":
                 lose_game((termo_word_1,termo_word_2,termo_word_3,termo_word_4))
