@@ -57,8 +57,9 @@ def dueto_rules(termo_word_1,termo_word_2):
             clear_terminal()
             print("____DUETO____\n")
             for item in list_words:
-                list_green_1 = green(termo_word_1, user_word)
-                list_green_2 = green(termo_word_2, user_word)
+                print(item)
+            list_green_1 = green(termo_word_1, user_word)
+            list_green_2 = green(termo_word_2, user_word)
             if len(list_green_1) == 5 :
                 fim_1 = "|   |   |   |   |   |"
             elif len(list_green_2) == 5 :
@@ -131,11 +132,11 @@ def quarteto_rules(termo_word_1,termo_word_2,termo_word_3,termo_word_4):
             clear_terminal()
             print("____QUARTETO____\n")
             for item in list_words:
-                
-                list_green_1 = green(termo_word_1, user_word)
-                list_green_2 = green(termo_word_2, user_word)
-                list_green_3 = green(termo_word_3, user_word)
-                list_green_4 = green(termo_word_4, user_word)
+                print(item)
+            list_green_1 = green(termo_word_1, user_word)
+            list_green_2 = green(termo_word_2, user_word)
+            list_green_3 = green(termo_word_3, user_word)
+            list_green_4 = green(termo_word_4, user_word)
 
             if len(list_green_1) == 5 :
                 fim_1 = "|   |   |   |   |   |"
