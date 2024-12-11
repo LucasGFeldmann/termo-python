@@ -51,3 +51,5 @@ Ao vencer ou perder, o jogo oferece a opção de voltar ao menu principal ou rei
 #### Como Executar
 
 Certifique-se de ter o Python instalado em seu sistema. Execute o script `menu_game.py` para iniciar o jogo. Siga as instruções no terminal para escolher a modalidade e jogar.
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d18513.665373680302!2d-53.262176508365904!3d-29.65032661628801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1spt-BR!2sbr!4v1733880661480!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
